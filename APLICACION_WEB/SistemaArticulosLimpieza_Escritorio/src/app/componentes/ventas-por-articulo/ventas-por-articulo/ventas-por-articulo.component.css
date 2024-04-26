@@ -1,0 +1,24 @@
+.seleccion-producto{
+  text-align: start;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
+.seleccion-producto select {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.seleccion-producto select:focus {
+  border-color: dodgerblue;
+}
+
+.seleccion-producto option {
+  padding: 10px;
+}

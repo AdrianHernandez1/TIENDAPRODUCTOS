@@ -1,0 +1,47 @@
+<section class="section">
+  <div class="seleccion-producto">
+    <div class="seleccion-producto">
+      <select name="productos" id="productos" [(ngModel)]="idsProductos">
+        <option disabled selected>Selecciona un producto</option>
+        <option *ngFor="let producto of arrayCantidadProductosExistentes" [value]="producto.IDProductos" >{{ producto.Titulo }}</option>
+      </select>&nbsp;&nbsp;
+      <button mat-button mat-flat-button color="primary" class="custom-button" (click)="obtenerProductos()">Obtener productos</button>
+    </div>
+
+  </div>
+  <div class="example-container mat-elevation-z8">
+    <div class="table-container">
+      <table mat-table [dataSource]="arrayVentasPorArticulo" class="table"
+             matSort matSortActive="created" matSortDisableClear matSortDirection="desc">
+        <ng-container matColumnDef="IDProducto">
+          <th mat-header-cell *matHeaderCellDef>IDProducto</th>
+          <td mat-cell *matCellDef="let row">{{row.IDProducto}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Titulo">
+          <th mat-header-cell *matHeaderCellDef>Titulo</th>
+          <td mat-cell *matCellDef="let row">{{row.Titulo}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Descripcion">
+          <th mat-header-cell *matHeaderCellDef>Descripcion</th>
+          <td mat-cell *matCellDef="let row">{{row.Descripcion}}</td>
+        </ng-container>
+        <ng-container matColumnDef="TotalVendido">
+          <th mat-header-cell *matHeaderCellDef>Total Vendido</th>
+          <td mat-cell *matCellDef="let row">{{row.TotalVendido}}</td>
+        </ng-container>
+        <ng-container matColumnDef="PrecioUnitario">
+          <th mat-header-cell *matHeaderCellDef>Precio Unitario</th>
+          <td mat-cell *matCellDef="let row">{{row.PrecioUnitario}}</td>
+        </ng-container>
+        <ng-container matColumnDef="TotalVentas">
+          <th mat-header-cell *matHeaderCellDef>Total Ventas</th>
+          <td mat-cell *matCellDef="let row">{{row.TotalVentas}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="['IDProducto', 'Titulo', 'Descripcion', 'TotalVendido','PrecioUnitario','TotalVentas']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['IDProducto', 'Titulo', 'Descripcion', 'TotalVendido','PrecioUnitario','TotalVentas'];"></tr>
+      </table>
+    </div>
+  </div>
+</section>
+

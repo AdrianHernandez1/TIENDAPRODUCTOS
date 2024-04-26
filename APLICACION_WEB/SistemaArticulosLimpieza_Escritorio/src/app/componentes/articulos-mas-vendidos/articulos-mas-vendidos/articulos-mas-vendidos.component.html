@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="example-container mat-elevation-z8">
+    <div class="table-container">
+      <table mat-table [dataSource]="arrayArticulosMasVendidos.slice(0,5)" class="table"
+             matSort matSortActive="created" matSortDisableClear matSortDirection="desc">
+        <ng-container matColumnDef="Titulo">
+          <th mat-header-cell *matHeaderCellDef>Titulo</th>
+          <td mat-cell *matCellDef="let row">{{row.Titulo}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Descripcion">
+          <th mat-header-cell *matHeaderCellDef>Descripcion</th>
+          <td mat-cell *matCellDef="let row">{{row.Descripcion}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="TotalVentas">
+          <th mat-header-cell *matHeaderCellDef>Total Ventas</th>
+          <td mat-cell *matCellDef="let row">{{row.TotalVentas}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="[ 'Titulo', 'Descripcion','TotalVentas']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['Titulo', 'Descripcion','TotalVentas'];"></tr>
+      </table>
+    </div>
+    <mat-paginator [length]="arrayOriginalArticulosMasVendidos.length" [pageSize]="5" [hidePageSize]="true"
+              (page)="paginatorProductos($event)" aria-label="Select page">
+            </mat-paginator>
+  </div>
+</section>
+

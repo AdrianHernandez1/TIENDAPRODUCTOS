@@ -1,0 +1,12 @@
+.badge-container {
+  cursor: pointer;
+}
+
+.custom-button {
+  width: 200px;
+  border-color: black;
+}
+
+.mat-tabla {
+  min-width: 300px;
+}

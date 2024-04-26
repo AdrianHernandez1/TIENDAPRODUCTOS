@@ -1,0 +1,36 @@
+
+.section {
+  height: 100vh;
+  background-color:  #ecf3fb  ;
+}
+
+
+.mat-toolbar{
+  background-color:   #36475b ;
+  color: white;
+}
+
+.section-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+
+.mat-card {
+  top: 8%;
+  width: 90%;
+  height: 100%;
+  text-align: start;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header-card {
+  text-align: center;
+}
+
+.section {
+  height: 100vh;
+}

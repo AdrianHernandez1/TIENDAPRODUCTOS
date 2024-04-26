@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="example-container mat-elevation-z8">
+    <div class="table-container">
+      <table mat-table [dataSource]="arrayCantidadProductosExistentes" class="table"
+             matSort matSortActive="created" matSortDisableClear matSortDirection="desc">
+        <ng-container matColumnDef="Titulo">
+          <th mat-header-cell *matHeaderCellDef>Titulo</th>
+          <td mat-cell *matCellDef="let row">{{row.Titulo}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Descripcion">
+          <th mat-header-cell *matHeaderCellDef>Descripcion</th>
+          <td mat-cell *matCellDef="let row">{{row.Descripcion}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Existencias">
+          <th mat-header-cell *matHeaderCellDef>Existencias</th>
+          <td mat-cell *matCellDef="let row">{{row.Existencias}}</td>
+        </ng-container>
+        <ng-container matColumnDef="PrecioUnitario">
+          <th mat-header-cell *matHeaderCellDef>Precio Unitario</th>
+          <td mat-cell *matCellDef="let row">{{row.PrecioUnitario}}</td>
+        </ng-container>
+        <ng-container matColumnDef="TotalVentas">
+          <th mat-header-cell *matHeaderCellDef>Total Ventas</th>
+          <td mat-cell *matCellDef="let row">{{row.TotalVentas}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="['Titulo', 'Descripcion', 'Existencias','PrecioUnitario','TotalVentas']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['Titulo', 'Descripcion', 'Existencias','PrecioUnitario','TotalVentas'];"></tr>
+      </table>
+    </div>
+    <mat-paginator [length]="arrayOriginalCantidadProductosExistentes.length" [pageSize]="5" [hidePageSize]="true"
+    (page)="paginatorProductos($event)" aria-label="Select page">
+  </mat-paginator>
+  </div>
+</section>
+

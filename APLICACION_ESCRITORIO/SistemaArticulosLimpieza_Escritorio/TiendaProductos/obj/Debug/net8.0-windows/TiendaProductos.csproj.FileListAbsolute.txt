@@ -1,0 +1,16 @@
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\bin\Debug\net8.0-windows\TiendaProductos.exe
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\bin\Debug\net8.0-windows\TiendaProductos.deps.json
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\bin\Debug\net8.0-windows\TiendaProductos.runtimeconfig.json
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\bin\Debug\net8.0-windows\TiendaProductos.dll
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\bin\Debug\net8.0-windows\TiendaProductos.pdb
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.Form1.resources
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.csproj.GenerateResource.cache
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.AssemblyInfoInputs.cache
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.AssemblyInfo.cs
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.csproj.CoreCompileInputs.cache
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.dll
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\refint\TiendaProductos.dll
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.pdb
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\TiendaProductos.genruntimeconfig.cache
+C:\Users\Adrian Hernandez\Desktop\C#\TiendaProductos\TiendaProductos\obj\Debug\net8.0-windows\ref\TiendaProductos.dll

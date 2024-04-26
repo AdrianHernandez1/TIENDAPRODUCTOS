@@ -1,0 +1,18 @@
+<div class="badge-container" >
+  <div matBadge="{{numeroProductos}}" matBadgeOverlap="false" class="demo-section">Hay {{numeroProductos}} productos menor a 100 existencias</div>
+</div>
+
+<button mat-button mat-flat-button color="primary" [matMenuTriggerFor]="settingsMenu" class="custom-button">Obtener datos</button>
+
+<mat-menu class="mat-menu-panel" #settingsMenu >
+      <table>
+        <tr>
+          <th style="text-align: center;">Producto</th>
+          <th style="text-align: center;">Existencias</th>
+        </tr>
+        <tr *ngFor="let producto of arrayCantidadProductosExistentes">
+          <td style="text-align: center;">{{ producto.Titulo }}</td>
+          <td style="text-align: center;">{{ producto.Existencias }}</td>
+        </tr>
+      </table>
+</mat-menu>
